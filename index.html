@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="ahmed_logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .dark-mode {
+            background-color: #343a40;
+            color: white;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #1f3a93;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 10px 0;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: #1f3a93;
+            color: white;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .subject-links {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .subject-links li {
+            margin: 10px;
+        }
+
+        .subject-links a {
+            color: #1f3a93;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            border: 2px solid #1f3a93;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .subject-links a:hover {
+            background-color: #1f3a93;
+            color: white;
+        }
+
+        .educational-providers {
+            margin: 40px 0;
+        }
+
+        .quote {
+            font-style: italic;
+            margin: 20px 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeIn 1s ease-in;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            .subject-links a {
+                font-size: 1rem;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #1f3a93;
+            padding: 10px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .dark-mode-toggle {
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            background-color: #1f3a93;
+            color: white;
+            border-radius: 5px;
+        }
+
+          .cta-button {
+            display: inline-block;
+            background-color: #007bff; /* Blue color */
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: #218838;
+        }
+
+        .notice-banner {
+            background-color: #ffcc00;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            font-size: 1.2rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+            display: block;
+        }
+
+        .close-banner {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-left: 15px;
+        }
+    </style>
+    <script defer src="https://analytics.tiiny.site/js/plausible.js" data-domain="ahmedacademy.tiiny.site"></script>
+    <script src="https://tiiny.host/ad-script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="ahmed_logo.png" alt="Ahmed Logo" width="100" height="100">
+        <h1>Welcome to Ahmed Academy</h1>
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </header>
+
+    <nav class="navbar" aria-label="Main Navigation">
+        <ul>
+            <li><a href="#fields">Study Fields</a></li>
+            <li><a href="#providers">Educational Providers</a></li>
+            <li><a href="#quality">Quality Education</a></li>
+            <li><a href="#quote">Quote</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <section id="fields">
+            <h1>Our Study Fields</h1>
+            <h2>At Ahmed Academy, we offer world-class education in various subjects. Explore our offerings:</h2>
+            <ul class="subject-links">
+                <li><a href="math.html">Math</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="english.html">English</a></li>
+                <li><a href="computer-science.html">Computer Science</a></li>
+            </ul>
+        </section>
+
+        <section class="educational-providers" id="providers">
+            <h1>Our Educational Providers</h1>
+            <h2>Ahmed Farwin & Abdullah Farwin</h2>
+            <h2>Founder/Teacher & Co-Founder/Teacher</h2>
+            <img src="Motto.png" alt="Ahmed Academy Motto" />
+        </section>
+
+        <section id="quality">
+            <h1>Quality Education Online</h1>
+            <h2>Ahmed Academy uses ZOOM for the highest quality in video and audio.</h2>
+        </section><br>
+
+        <h1>Why Ahmed Academy</h1>
+        <h2>Ahmed Academy is the top selected online Islamic school for students striving for excellence and good manners in the future.<br> We aim to help provide the necessary information to help the students fill in their weaknesses to become the top in their class.<br> The world is a competition, and we wish to make your child achieve their goals in life by becoming a better person.</h2><br>
+
+        <blockquote class="quote" id="quote">
+            "Ahmed Academy is a high-quality online school aimed to teach children to their max capacity so they can strive for success." - Founder of Ahmed Academy
+        </blockquote><br>
+
+        <h1>Quality Education</h1>
+        <h2>We offer the best education to all around the globe</h2><br><br>
+
+   <main class="content">
+   <h1>Click to contact us</h1>
+        <a href="mailto:ahmedfarwin@outlook.com" class="cta-button">Contact Us</a>
+    </main>
+
+    <section id="qr-code" style="text-align: center; margin-top: 40px;">
+        <h2>Scan to Learn More</h2>
+        <img src="QR code.png" alt="Scan this QR code to learn more about Ahmed Academy" width="200">
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Ahmed Academy. All rights reserved.</p>
+    </footer>
+
+    <div class="notice-banner" id="noticeBanner">
+        <span class="notice-content">
+            <strong>Important Notice:</strong> Enroll now to get high quality education in the safety of your home 
+        </span>
+        <button class="close-banner" onclick="closeNotice()">✖</button>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        function closeNotice() {
+            document.getElementById('noticeBanner').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
